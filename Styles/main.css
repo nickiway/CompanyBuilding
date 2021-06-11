@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+body{
+    background-color: #000;
+}
 a{
     text-decoration: none; 
     color:#000;
