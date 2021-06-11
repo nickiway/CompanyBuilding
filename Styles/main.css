@@ -1,0 +1,26 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none; 
+    color:#000;
+}
+button,input[type=submit],a{
+    cursor: pointer;
+}
+.toCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.font-bold{
+    font-weight: bold !important;
+}
+.setShadow{
+    text-shadow: 0px 0px 3px #000 !important; 
+    color:#fff !important;
+}
