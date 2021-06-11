@@ -1,6 +1,10 @@
 header{
-    height: 50px;
-    margin:30px;
+    height: 100vh;
+    filter: grayscale(70%);
+    background-image: url(https://i.pinimg.com/originals/30/5b/52/305b52557fefb12534bfe080f47c107c.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 nav > ul > li{
     list-style: none;
