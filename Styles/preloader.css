@@ -1,0 +1,22 @@
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #cccccc;
+    z-index: 1001;
+  }
+  
+  .preloader__row {
+    position: relative;
+    
+  }
+  .loaded_hiding .preloader {
+    transition: 0.3s opacity;
+    opacity: 0;
+  }
+  
+  .loaded .preloader {
+    display: none;
+  } 

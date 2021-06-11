@@ -1,0 +1,18 @@
+header{
+    height: 50px;
+    margin:30px;
+}
+nav > ul > li{
+    list-style: none;
+    margin: 10px 50px;
+    font-size: 20px;
+}
+.logo{
+    width: 96px;
+    height: 96px;
+    background-image: url(https://pngimg.com/uploads/house/house_PNG63.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+}

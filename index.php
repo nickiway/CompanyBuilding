@@ -15,14 +15,25 @@ require_once(ROOT.'\functions\getGoods.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Styles/main.css">
     <link rel="stylesheet" href="Styles/mainPage.css">
+    <link rel="stylesheet" href="Styles/header.css">
+    <link rel="stylesheet" href="Styles/preloader.css">
     <title>Добро пожаловать!</title>
 </head>
 <body>
+    <? require_once(ROOT.'\siteItems\preloader.php'); ?>
     <!-- Header -->
-
+    <!-- <? require_once(ROOT.'\siteItems\header.php'); ?> -->
     <!-- Body -->
-
+    <div class="toCenter">
+        <div class="items_first toCenter">
+            <p></p>
+        </div>
+        <div class="items_first toCenter">dasdas</div>
+        <div class="items_first toCenter">dasdas</div>
+    </div>
     <!-- Footer -->
 
 </body>
+<script src="JavaScript/preloader.js"></script>
+<script src="JavaScript/mainPage.js"></script>
 </html>
