@@ -22,7 +22,7 @@ require_once(ROOT.'\functions\getGoods.php');
 <body>
     <? require_once(ROOT.'\siteItems\preloader.php'); ?>
     <!-- Header -->
-    <!-- <? require_once(ROOT.'\siteItems\header.php'); ?> -->
+    <? require_once(ROOT.'\siteItems\header.php'); ?>
     <!-- Body -->
     <div class="toCenter">
         <div class="items_first toCenter">
