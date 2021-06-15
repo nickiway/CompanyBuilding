@@ -5,7 +5,6 @@ error_reporting(E_ALL);
 // connecting files
 define('ROOT', dirname(__FILE__));
 require_once(ROOT.'\config\connect.php');
-require_once(ROOT.'\functions\getGoods.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -24,12 +23,14 @@ require_once(ROOT.'\functions\getGoods.php');
     <!-- Header -->
     <? require_once(ROOT.'\siteItems\header.php'); ?> 
     <!-- Body -->
-    <div class="toCenter">
-        <div class="items_first toCenter">
-            <p></p>
+    <div class="main">
+        <div class="toCenter">
+            <div class="main__namer font-bold">Товары на Ваш выбор</div>
         </div>
-        <div class="items_first toCenter">
-        <? require_once(ROOT.'\siteItems\functions\getGoods.php'); ?>
+        <div class="toCenter">
+            <div class="main__items toCenter">
+                <? require_once(ROOT.'\functions\getGoods.php');?>
+            </div>
         </div>
     </div>
     <!-- Footer -->
