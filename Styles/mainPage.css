@@ -60,8 +60,3 @@
 .cards__description{
     margin:15px;
 }
-.cards__stock{
-    color:red;
-    padding: 10px;
-    text-transform: uppercase;
-}
