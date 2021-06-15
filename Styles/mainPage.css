@@ -46,12 +46,22 @@
 .cards__sale{
     position: absolute;
     z-index: 10;
-    background-color: lime;
-    width: 100px;
-    padding:5px;
+    background: rgb(111,221,37);
+    background: radial-gradient(circle, rgba(111,221,37,1) 0%, rgba(0,255,119,1) 100%);
+    padding:10px;
+    border-radius: 0px 0px 20px 0px;
+    box-shadow: 3px 3px 3px #000;
 }
 .cards__cost{
-    text-shadow: 0px 0px 1px #000;
     font-size: 20px;
-   
+    color:firebrick;
+    margin: 0px 10px ;
+}
+.cards__description{
+    margin:15px;
+}
+.cards__stock{
+    color:red;
+    padding: 10px;
+    text-transform: uppercase;
 }
