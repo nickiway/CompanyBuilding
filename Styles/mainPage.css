@@ -37,15 +37,21 @@
     margin:20px 0px 
 }
 .cards__button{
-    width: 100px;
-    padding:5px;
+    width: 100%;
+    border:none;
+    font-style: 24px;
+    padding:10px;
+    background-color: orange;
 }
 .cards__sale{
     position: absolute;
     z-index: 10;
-    top:0;
-    left:0;
-    background: lime;
+    background-color: lime;
     width: 100px;
     padding:5px;
+}
+.cards__cost{
+    text-shadow: 0px 0px 1px #000;
+    font-size: 20px;
+   
 }
