@@ -39,7 +39,7 @@
 .cards__button{
     width: 100%;
     border:none;
-    font-style: 24px;
+    font-style: normal;
     padding:10px;
     background-color: orange;
 }
