@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Июн 15 2021 г., 19:59
+-- Время создания: Июн 15 2021 г., 21:24
 -- Версия сервера: 10.3.22-MariaDB
 -- Версия PHP: 7.1.33
 
@@ -32,17 +32,18 @@ CREATE TABLE `goods` (
   `Name` varchar(11) COLLATE utf8mb4_unicode_ci NOT NULL,
   `ImageLink` varchar(11) COLLATE utf8mb4_unicode_ci NOT NULL,
   `Cost` int(11) NOT NULL,
-  `Sale` int(11) NOT NULL
+  `Sale` int(11) NOT NULL,
+  `In stock` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Дамп данных таблицы `goods`
 --
 
-INSERT INTO `goods` (`ID`, `Name`, `ImageLink`, `Cost`, `Sale`) VALUES
-(1, 'Плитка ', 'Img3.jpg', 1111, 1000),
-(2, 'Гвозди', 'Img2.jpeg', 1002, 0),
-(3, 'Пила', 'Img1.jpg', 9000, 0);
+INSERT INTO `goods` (`ID`, `Name`, `ImageLink`, `Cost`, `Sale`, `In stock`) VALUES
+(1, 'Плитка ', 'Img3.jpg', 1111, 1000, 1),
+(2, 'Гвозди', 'Img2.jpeg', 1002, 500, 1),
+(3, 'Пила', 'Img1.jpg', 9000, 0, 0);
 
 --
 -- Индексы сохранённых таблиц
