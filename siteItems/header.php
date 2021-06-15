@@ -1,6 +1,6 @@
-<header>
-    <nav class = "setShadow toCenter">
-        <div class="logo"></div>
+<header class = "toCenter">
+    <div class="logo"></div>
+    <nav class = "setShadow">
         <ul class = "toCenter">
             <li>Каталог</li>
             <li>Каталог</li>
