@@ -1,0 +1,15 @@
+body{
+    margin: 0;
+}
+.ourimg{
+    width: 30%;
+}
+.ourimg>img{
+    width: 100%;
+}
+box{
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+}
