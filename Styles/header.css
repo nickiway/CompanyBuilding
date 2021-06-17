@@ -7,18 +7,32 @@ h3{
     font-family: Impact;
 }
 .container{
-    background-color: #cccccc;
+    margin-top: 20px;
+    background-color: #f4f4f4;
     font-weight: normal;
+    display: flex;
+    height: 50px;
     width: 100%;
+}
+.text{
+    font-family: sans-serif;
+    font-size: 16pt;
 }
 nav > ul{
     display: flex;
+    align-items: center;
     justify-content: flex-start;
     column-gap: 20px;
     list-style: none;
 }
+li{
+    margin-left: 20px;
+}
 .container:nth-of-type(1){
     background-color: #ffffff;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px 0px 20px;
 }
 
 .logo{
