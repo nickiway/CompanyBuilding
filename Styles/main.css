@@ -8,7 +8,7 @@ a{
     text-decoration: none; 
     color:#000;
 }
-button,input[type=submit],a,li{
+button,input[type=submit],a,li,svg{
     cursor: pointer;
 }
 .toCenter {

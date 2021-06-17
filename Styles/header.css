@@ -16,7 +16,8 @@ h3{
 }
 .text{
     font-family: sans-serif;
-    font-size: 16pt;
+    font-size: 14pt;
+    font-weight: bold;
 }
 nav > ul{
     display: flex;
@@ -26,7 +27,15 @@ nav > ul{
     list-style: none;
 }
 li{
+    display: flex;
+    align-items: center;
+    height: 50px;
     margin-left: 20px;
+    transition: 0.3s;
+}
+li:hover{
+    background: #ffffff;
+    border-bottom: 1pt solid black;
 }
 .container:nth-of-type(1){
     background-color: #ffffff;
