@@ -16,6 +16,7 @@ require_once(ROOT.'\config\connect.php');
     <link rel="stylesheet" href="Styles/medias.css">
     <link rel="stylesheet" href="Styles/main.css">
     <link rel="stylesheet" href="Styles/mainPage.css">
+    <link rel="stylesheet" href="Styles/footer.css">
     <link rel="stylesheet" href="Styles/header.css">
     <link rel="stylesheet" href="Styles/preloader.css">
     <title>Добро пожаловать!</title>
@@ -36,7 +37,7 @@ require_once(ROOT.'\config\connect.php');
         </div>
     </div>
     <!-- Footer -->
-
+    <? require_once(ROOT.'\siteItems\footer.php'); ?>
 </body>
 <script src="JavaScript/preloader.js"></script>
 <script src="JavaScript/mainPage.js"></script>
