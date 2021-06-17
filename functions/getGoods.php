@@ -1,7 +1,8 @@
 <?php
 $getItems = mysqli_query($connect, "SELECT * FROM goods");
 while($row = mysqli_fetch_assoc($getItems)){
-    // Checking whether we have sales
+    $percent = 0;
+    // Checking whethear we have sales
     if ($row['Sale'] == 0) {
         $displaySale = "none";
         $textDecoration = "none";
@@ -10,7 +11,7 @@ while($row = mysqli_fetch_assoc($getItems)){
         $displaySale = "block";
         $textDecoration = "line-through";
     };
-    // Checking whether the items in stock
+    // Checking whethear the items in stock
     if ($row['In stock'] == 1) {
     } else {
         continue;
