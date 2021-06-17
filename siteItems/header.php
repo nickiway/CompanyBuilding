@@ -1,6 +1,6 @@
 <header>
-    <nav class="toCenter">
-        <nav class="container">
+    <div class="toCenter">
+        <div class="container">
            <img  src="../icons/menu_burger.png" alt="Menu">
             <a href="../index.php"><div class="logo"></div></a>
             <div>
@@ -12,9 +12,10 @@
                     <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
                 </svg>
             </div>
-
-        </nav>
-        <nav class = "text container">
+        </div>
+    </div>
+    <div class="toCenter">
+        <nav class = "toCenter menu__text container">
             <ul>
                 <li  onclick = "window.location.href ='1.php'">Каталог</li>
                 <li  onclick = "window.location.href ='1.php'">Про нас</li>
@@ -22,5 +23,5 @@
                 <li  onclick = "window.location.href ='1.php'">Каталог</li>
             </ul>
         </nav>
-    </nav>
+    </div>
 </header>
