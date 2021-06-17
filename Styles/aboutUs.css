@@ -1,15 +1,42 @@
 body{
     margin: 0;
 }
-.ourimg{
-    width: 30%;
+.info_left{
+    padding: 20px;
+    width: 35%;
 }
-.ourimg>img{
+.info_right{
+    padding: 20px;
+    width: 35%;
+}
+.list{
+    width: 30%;
+    height: auto;
+}
+list>ul{
+    list-style: none;
+}
+.list>ul>li{
+    border: 3pt solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    border-radius: 100%;
+    font-size: 48pt;
+    width: 150px;
+    height: 150px;
+}
+.info_left>img{
+    width: 100%;
+}
+.info_right>img{
     width: 100%;
 }
 box{
-    padding: 20px;
-    margin-top: 20px;
+    /*padding: 20px;*/
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
 }

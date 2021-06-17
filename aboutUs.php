@@ -26,14 +26,20 @@ require_once(ROOT.'\config\connect.php');
     <? require_once(ROOT.'\siteItems\header.php'); ?>
     <!-- Body -->
     <div class="box">
-        <div class="ourimg">
-            <img src="images/Img1.jpg" alt="About Us" width="100%">
-            <img src="images/Img1.jpg" alt="About Us">
+        <div class="info_left">
+            <img src="" alt="About Us" width="100%">
         </div>
-        <div>
-
+        <div class="list">
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+            </ul>
         </div>
-
+        <div class="info_right">
+            <img src="" alt="About Us" width="100%">
+        </div>
     </div>
     <!-- Footer -->
 </body>
