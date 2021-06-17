@@ -1,0 +1,5 @@
+@media screen and (min-width: 500px) {
+    #menu-burger{
+        display: block;
+    }   
+}

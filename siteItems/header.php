@@ -1,9 +1,7 @@
 <header>
     <nav class="toCenter">
         <nav class="container">
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-filter-left" viewBox="0 0 16 16">
-                <path d="M2 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
-            </svg>
+           <img  src="../icons/menu_burger.png" alt="Menu">
             <a href="../index.php"><div class="logo"></div></a>
             <div>
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
@@ -18,10 +16,10 @@
         </nav>
         <nav class = "text container">
             <ul>
-                <a href=""><li>Каталог</li></a>
-                <a href=""><li>Про нас</li></a>
-                <a href=""><li>Каталог</li></a>
-                <a href=""><li>Каталог</li></a>
+                <li  onclick = "window.location.href ='1.php'">Каталог</li>
+                <li  onclick = "window.location.href ='1.php'">Про нас</li>
+                <li onclick = "window.location.href ='1.php'">Каталог</li>
+                <li  onclick = "window.location.href ='1.php'">Каталог</li>
             </ul>
         </nav>
     </nav>
