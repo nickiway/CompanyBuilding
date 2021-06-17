@@ -19,6 +19,7 @@
 .cards__image{
     background-position: center;
     background-size: cover;
+    border-bottom: 2px solid #cccccc;
     position: relative;
     background-repeat: no-repeat;
     height:250px;
