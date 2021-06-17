@@ -1,7 +1,7 @@
 <header>
     <nav class="toCenter">
         <nav class="container">
-           <div></div>
+           <img  src="../icons/menu_burger.png" alt="Menu">
             <a href="../index.php"><div class="logo"></div></a>
             <div>
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
