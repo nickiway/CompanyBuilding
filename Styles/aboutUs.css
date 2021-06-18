@@ -3,29 +3,32 @@ body{
 }
 .info_left{
     padding: 20px;
-    width: 35%;
+    width: 30%;
 }
 .info_right{
     padding: 20px;
-    width: 35%;
+    width: 30%;
 }
 .list{
-    width: 30%;
-    height: auto;
+    width: 15%;
 }
-list>ul{
-    list-style: none;
+.list>ul{
+    margin-left: 32%;
+    padding: 0;
+    border-radius: 100%;
+    width: 100%;
 }
 .list>ul>li{
-    border: 3pt solid black;
+    border: 1pt solid black;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    margin-top: 75px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 15px;
     border-radius: 100%;
-    font-size: 48pt;
-    width: 150px;
-    height: 150px;
+    font-size: 20pt;
+    width: 75px;
+    height: 75px;
 }
 .info_left>img{
     width: 100%;
@@ -33,10 +36,11 @@ list>ul{
 .info_right>img{
     width: 100%;
 }
-box{
-    /*padding: 20px;*/
+.box{
     display: flex;
+    column-gap: 25px;
     justify-content: center;
     align-items: center;
+    padding: 15px;
     width: 100%;
 }
