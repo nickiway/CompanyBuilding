@@ -9,32 +9,23 @@ body{
     padding: 20px;
     width: 30%;
 }
-.list{
-    width: 15%;
-}
-.list>ul{
-    margin-left: 32%;
-    padding: 0;
-    border-radius: 100%;
-    width: 100%;
-}
-.list>ul>li{
-    border: 1pt solid black;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    margin-top: 75px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 100%;
-    font-size: 20pt;
-    width: 75px;
-    height: 75px;
-}
 .info_left>img{
+    margin-top: 75px;
     width: 100%;
+    border-radius: 3%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
-.info_right>img{
-    width: 100%;
+.info_right>ul{
+    list-style: none;
+}
+.info_right>ul>li{
+    padding: 15px;
+    margin-top: 20px;
+    border: 1pt solid #ffffff;
+    border-radius: 10px;
+    cursor: default;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transition: 1s;
 }
 .box{
     display: flex;
