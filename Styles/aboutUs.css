@@ -10,7 +10,7 @@ body{
     align-items: center;
     column-gap: 25px;
     margin-top: 20px;
-    margin-bottom: 300px;
+    margin-bottom: 310px;
     animation: appearence 1s ease;
 }
 .info_right{
@@ -39,6 +39,14 @@ body{
 p{
     font-weight: normal;
 }
+.map{
+    margin:50px auto;
+    width: 100%;
+}
+.map>iframe{
+    width: 100%;
+    height: 500px;
+}
 .info_center{
     display: block;
     justify-content: center;
@@ -66,7 +74,7 @@ p{
 }
 .box{
     padding: 20px 100px;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
     display: flex;
     column-gap: 25px;
     justify-content: space-between;

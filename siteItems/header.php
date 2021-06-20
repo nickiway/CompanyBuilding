@@ -17,10 +17,10 @@
     <div class="toCenter">
         <nav class = "toCenter menu__text container">
             <ul>
-                <li  onclick = "window.location.href ='1.php'">Каталог</li>
-                <li  onclick = "window.location.href ='1.php'">Про нас</li>
                 <li onclick = "window.location.href ='1.php'">Каталог</li>
-                <li  onclick = "window.location.href ='1.php'">Каталог</li>
+                <li onclick = "window.location.href ='../aboutUs.php'">Про нас</li>
+                <li onclick = "window.location.href ='1.php'">Каталог</li>
+                <li onclick = "window.location.href ='1.php'">Каталог</li>
             </ul>
         </nav>
     </div>
