@@ -109,7 +109,7 @@ require_once(ROOT.'\config\connect.php');
     </div>
     <h2 style="text-align: center">Где мы находимся</h2>
     <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1323.6729341030089!2d35.0555076349812!3d48.43070132179847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbfcc9cd38add9%3A0xec74071e4dd6c554!2sHoryana%20St%2C%2025%2C%20Dnipropetrovs&#39;k%2C%20Dnipropetrovs&#39;ka%20oblast%2C%2049000!5e0!3m2!1sen!2sua!4v1624214830990!5m2!1sen!2sua" style="border:0;" loading="lazy"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1323.6729341030089!2d35.0555076349812!3d48.43070132179847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbfcc9cd38add9%3A0xec74071e4dd6c554!2sHoryana%20St%2C%2025%2C%20Dnipropetrovs&#39;k%2C%20Dnipropetrovs&#39;ka%20oblast%2C%2049000!5e0!3m2!1sen!2sua!4v1624214830990!5m2!1sen!2sua" loading="eager"></iframe>
     </div>
     <!-- Footer -->
     <? require_once(ROOT.'\siteItems\footer.php'); ?>

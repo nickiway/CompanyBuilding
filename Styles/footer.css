@@ -1,8 +1,10 @@
 footer{
     background-color: #f4f4f4;
+    margin: 0;
     width: 100%;
     height: auto;
     padding: 30px 40px 30px 40px;
+    border-top: 2pt solid #000;
 }
 .cont{
     display: flex;
