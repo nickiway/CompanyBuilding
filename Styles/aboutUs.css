@@ -2,36 +2,78 @@ body{
     margin: 0;
 }
 .info_left{
-    padding: 20px;
-    width: 30%;
+    width: 35%;
 }
-.info_right{
-    padding: 20px;
-    width: 30%;
-}
-.info_left>img{
-    margin-top: 75px;
-    width: 100%;
-    border-radius: 3%;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-}
-.info_right>ul{
-    list-style: none;
-}
-.info_right>ul>li{
-    padding: 15px;
-    margin-top: 20px;
-    border: 1pt solid #ffffff;
-    border-radius: 10px;
-    cursor: default;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    transition: 1s;
-}
-.box{
+.info_left>div{
     display: flex;
-    column-gap: 25px;
     justify-content: center;
     align-items: center;
-    padding: 15px;
+    column-gap: 25px;
+    margin-top: 20px;
+    margin-bottom: 300px;
+    animation: appearence 1s ease;
+}
+.info_right{
+    width: 35%;
+}
+.info_right>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 25px;
+    margin-top: 300px;
+    animation: appearence 1s ease;
+}
+.info_left>div>img,.info_right>div>img{
+     max-width: 65%;
+     border-radius: 3%;
+     box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.info_left>div>div,.info_right>div>div{
+    min-width: 200px;
+    height: auto;
+}
+.info_left>div>div>*,.info_right>div>div>*{
+    font-family: Impact;
+}
+p{
+    font-weight: normal;
+}
+.info_center{
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+.punkt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    margin: 30px 0 0px 0;
+    width: 100px;
+    height: 100px;
+    font-size: 24pt;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    font-family: Impact;
+}
+.line{
+    margin: auto;
+    border-radius: 5%;
+    background-color: black;
+    margin: 25px auto 0px auto;
+    width: 3px;
+    height: 100px;
+}
+.box{
+    padding: 20px 100px;
+    margin-bottom: 50px;
+    display: flex;
+    column-gap: 25px;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
+}
+@keyframes appearence {
+    from {opacity: 0}
+    to {opacity: 1}
 }

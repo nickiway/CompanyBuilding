@@ -28,19 +28,84 @@ require_once(ROOT.'\config\connect.php');
     <!-- Body -->
     <div class="box">
         <div class="info_left">
-            <img src="images/Img1.jpg" alt="About Us" width="100%">
-            <img src="images/Img1.jpg" alt="About Us" width="100%">
+            <div>
+                <img src="images/Img1.jpg" alt="About Us" width="100%">
+                <div>
+                    <h2>Быстро работаем</h2>
+                    <p class="info">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+            </div>
+            <div>
+                <img src="images/Img1.jpg" alt="About Us" width="100%">
+                <div>
+                    <h2>Быстро работаем</h2>
+                    <p class="info">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+            </div>
+            <div>
+                <img src="images/Img1.jpg" alt="About Us" width="100%">
+                <div>
+                    <h2>Быстро работаем</h2>
+                    <p class="info">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+            </div>
+        </div>
+        <div class="info_center">
+            <div class="punkt">
+                1
+            </div>
+            <div  class="line">
+            </div>
+            <div class="punkt">
+                2
+            </div>
+            <div  class="line">
+            </div>
+            <div class="punkt">
+                3
+            </div>
+            <div  class="line">
+            </div>
+            <div class="punkt">
+                4
+            </div>
+            <div  class="line">
+            </div>
+            <div class="punkt">
+                5
+            </div>
+            <div  class="line">
+            </div>
+            <div class="punkt">
+                6
+            </div>
         </div>
         <div class="info_right">
-            <ul>
-                <li class="info">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </li>
-                <li class="info">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </li>
-                <li class="info">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </li>
-                <li class="info">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </li>
-            </ul>
+            <div>
+                <div>
+                    <h2>Быстро работаем</h2>
+                    <p class="info">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+                <img src="images/Img1.jpg" alt="About Us" width="100%">
+            </div>
+            <div>
+                <div>
+                    <h2>Быстро работаем</h2>
+                    <p class="info">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+                <img src="images/Img1.jpg" alt="About Us" width="100%">
+            </div>
+            <div>
+                <div>
+                    <h2>Быстро работаем</h2>
+                    <p class="info">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+                <img src="images/Img1.jpg" alt="About Us" width="100%">
+            </div>
         </div>
     </div>
     <!-- Footer -->
+
 </body>
 <script src="JavaScript/preloader.js"></script>
 <script src="JavaScript/mainPage.js"></script>
