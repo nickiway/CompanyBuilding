@@ -14,14 +14,15 @@ class GoodsCards{
         if($this->sale != 0){
             $percent = round(100 - ($this->sale * 100 / $this->cost));
             return array($percent,"block","line-through");
-        }
+        }   else return array(0,"none","none");
+        
     }
 }
 $getItems = mysqli_query($connect, "SELECT * FROM goods");
 while($row = mysqli_fetch_assoc($getItems)){
     $class = new GoodsCards($row['Name'],$row['Cost'],$row['ImageLink'],$row['Sale'],$row['In stock']);
     // Checking whethear the items in stock
-    $textDecoration = "none";
+    $textDecoration = "none";  
     $displaySale = "none";
     $displaySale = $class->is_sale()[1];
     $textDecoration = $class->is_sale()[2];
