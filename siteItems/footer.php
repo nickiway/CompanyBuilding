@@ -4,6 +4,9 @@
             <li onclick="window.location.href = 'index.php'">Главная</li>
             <li onclick="window.location.href = 'index.php'">Главная</li>
             <li onclick="window.location.href = 'index.php'">Главная</li>
+            <li onclick="window.location.href = 'index.php'">Главная</li>
+            <li onclick="window.location.href = 'index.php'">Главная</li>
+            <li onclick="window.location.href = 'index.php'">Главная</li>
         </ul>
         <div class="cont" style="color: #fff">
             <div class="contact">
