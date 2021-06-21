@@ -85,14 +85,6 @@ p{
     align-items: center;
     width: 100%;
 }
-.main_box{
-    width: 90%;
-    margin: 100px auto 0 auto;
-    border: 1pt solid #000;
-    box-shadow: 0 0 100px rgba(0,0,0,0.5);
-    padding-top: 20px;
-    background-color: #fff;
-}
 @keyframes appearence {
     from {opacity: 0}
     to {opacity: 1}

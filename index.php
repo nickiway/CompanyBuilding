@@ -26,13 +26,15 @@ require_once(ROOT.'\config\connect.php');
     <!-- Header -->
     <? require_once(ROOT.'\siteItems\header.php'); ?> 
     <!-- Body -->
-    <div class="main">
-        <div class="toCenter">
-            <div class="main__namer font-bold">Товары на Ваш выбор</div>
-        </div>
-        <div class="toCenter">
-            <div class="main__items toCenter">
-                <? require_once(ROOT.'\functions\getGoods.php');?>
+    <div class="main_box">
+        <div class="main">
+            <div class="toCenter">
+                <div class="main__namer font-bold">Товары на Ваш выбор</div>
+            </div>
+            <div class="toCenter">
+                <div class="main__items toCenter">
+                    <? require_once(ROOT.'\functions\getGoods.php');?>
+                </div>
             </div>
         </div>
     </div>
