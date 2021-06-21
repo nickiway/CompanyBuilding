@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e4f21a2-f966-41e4-9e83-718a6592dc9d" name="Default Changelist" comment="Merge remote-tracking branch 'origin/main' into main&#10;&#10;# Conflicts:&#10;#&#9;Styles/main.css&#10;#&#9;index.php&#10;#&#9;siteItems/header.php">
+      <change afterPath="$PROJECT_DIR$/images/Background.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Styles/aboutUs.css" beforeDir="false" afterPath="$PROJECT_DIR$/Styles/aboutUs.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Styles/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/Styles/footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Styles/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/Styles/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Styles/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/Styles/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aboutUs.php" beforeDir="false" afterPath="$PROJECT_DIR$/aboutUs.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/siteItems/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/siteItems/footer.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +88,8 @@
       <workItem from="1623921780473" duration="10172000" />
       <workItem from="1624015106373" duration="21339000" />
       <workItem from="1624091063525" duration="594000" />
-      <workItem from="1624198104318" duration="13332000" />
+      <workItem from="1624198104318" duration="13351000" />
+      <workItem from="1624285804221" duration="3104000" />
     </task>
     <task id="LOCAL-00001" summary="11/06/2021 19:24 Nick">
       <created>1623764860271</created>
@@ -180,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624215337534</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Merge remote-tracking branch 'origin/main' into main&#10;&#10;# Conflicts:&#10;#&#9;Styles/main.css&#10;#&#9;index.php&#10;#&#9;siteItems/header.php">
+      <created>1624216420610</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1624216420610</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
