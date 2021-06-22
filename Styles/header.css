@@ -13,7 +13,7 @@ div.container{
     width: 1300px;
 }
 nav.container{
-    margin:20px 0px;
+    margin: 0px;
     border-bottom: 1px solid #000;
     border-top : 1px solid #000;
 }
@@ -24,6 +24,7 @@ nav.container>ul{
 }
 nav{
     width: 100%;
+    margin-bottom: 0;
 }
 .menu__text{
     background-color: #f4f4f4 !important;

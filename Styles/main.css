@@ -15,7 +15,7 @@ button,input[type=submit],a,li,svg{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    align-items: flex-end;
+    align-items: center;
     text-align: center;
 }
 .font-bold{
@@ -26,8 +26,9 @@ button,input[type=submit],a,li,svg{
     color:#fff !important;
 }
 body{
+    /*background: linear-gradient(to right, #F6EFD2, #CEAD78);*/
     background-image: url("../images/Background.jpg");
-    background-repeat: no-repeat;
+    background-size: auto;
 }
 .main_box{
     width: 90%;
