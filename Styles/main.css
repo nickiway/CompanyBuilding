@@ -34,7 +34,6 @@ body{
     width: 90%;
     margin: 100px auto 0 auto;
     border: 1pt solid #000;
-    box-shadow: 10px 10px 30px #fff;
-    padding-top: 20px;
+    padding: 20px 0 20px 0;
     background-color: #fff;
 }
