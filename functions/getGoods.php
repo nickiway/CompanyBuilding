@@ -18,6 +18,7 @@ class GoodsCards{
         
     }
 }
+$counter = 1;
 $getItems = mysqli_query($connect, "SELECT * FROM goods");
 while($row = mysqli_fetch_assoc($getItems)){
     $card = new GoodsCards($row['Name'],$row['Cost'],$row['ImageLink'],$row['Sale'],$row['In stock']);
@@ -33,17 +34,21 @@ while($row = mysqli_fetch_assoc($getItems)){
     // creating new cards
     echo 
     "<div class='cards' onclick = 'openCard(".$row['ID'].")'>
-        <div style = 'display : ".$displaySale."' class='cards__sale font-bold setShadow'>Скидка — ".$card->is_sale()[0]."%</div>
-        <div class='cards__image'  style = 'background-image:url(images/".$row['ImageLink'].")'></div>
-            <div class='cards__information'>
-                <div class='cards__name toCenter font-bold'>".$card->name."</div>
-                <div class='cards__details'>
-                    <div class='cards__description'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, odio!</div>
-                    <div class='toCenter'>
-                        <div class='cards__cost font-bold' style = 'text-decoration:".$textDecoration."' >".$row['Cost']." гривен</div>
-                        <div class='cards__cost font-bold' style = 'display : ".$displaySale."'>".$row['Sale']." гривен</div>
-                    </div>
+        <div class='cards__image'  style = 'background-image:url(images/".$card->image.")'>
+            <div class='set-gray'>
+                <div class='cards__counter toCenter font-bold setShadow'>".$counter."</div>
+                <div style = 'display : ".$displaySale."' class='cards__sale font-bold '> - ".$card->is_sale()[0]."%</div>
+                <div class='toCenter height-full'>
+                    <div class='toCenter cards__name font-bold setShadow'>".$card->name."</div>
                 </div>
+                 <div class='toCenter font-bold setShadow cards__cost-info'>
+                    <div class='cards__cost font-bold' style = 'text-decoration:".$textDecoration."' >".$row['Cost']." гривен</div>
+                    <div class='cards__cost font-bold' style = 'display : ".$displaySale."'>".$row['Sale']." гривен</div>
+                </div>
+            </div>
+        </div>
+            <div class='cards__information'>
+                <div class='cards__description'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, odio!</div>
            </div>
         <button class = 'font-bold cards__button setShadow'>В корзину</button>
     </div>";
@@ -52,5 +57,6 @@ while($row = mysqli_fetch_assoc($getItems)){
 
     </div>
     ";
+    $counter++;
 }
 
