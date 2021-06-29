@@ -61,6 +61,7 @@ while($row = mysqli_fetch_assoc($getItems)){
     echo "
     <div id = '".$row['ID']."' class='cards__order toCenter'>
         <div class='cards__field'>  
+        <div class='cards__image-details' style = 'background-image:url(images/".$card->image.")'></div>
             <p class=  'font-bold toCenter'>".$card->name."</p>
             <input id = 'number".$row['ID']."' onchange = 'calculateSum(".$row['ID'].", ". $card->cost.", ". $card->sale.")' type='number' min = '1' value = '1'>
             <p id = 'sum".$row['ID']."'>".$startCost." Гривен</p>
