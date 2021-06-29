@@ -83,6 +83,24 @@
 .cards__description{
     margin:15px;
 }
+.cards__saler{
+    border:3px solid #fff;
+    font-size: 20px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 5px #fff;
+    border-radius: 10px;
+    background-color: #fff;
+    position: absolute;
+    top:10px;
+    left:10px;
+}
+.cards__cost-info{
+    position: absolute;
+    bottom:20px;
+    width: 100%;
+}
 .cards__order{
     background-color: rgba(0,0,0,.5);
     width: 100%;
@@ -93,19 +111,9 @@
     display: none;
     z-index: 20;
 }
-.cards__counter{
-    border:3px solid #fff;
-    width: 36px;
-    font-size: 20px;
-    box-shadow: 0px 0px 5px #fff;
-    height: 36px;
-    border-radius: 100%;
-    position: absolute;
-    top:10px;
-    left:10px;
-}
-.cards__cost-info{
-    position: absolute;
-    bottom:20px;
-    width: 100%;
+.cards__field{
+    width: 500px;
+    height: 500px;
+    background-color: #fff;
+    z-index: 25;
 }

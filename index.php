@@ -20,6 +20,7 @@ require_once(ROOT.'\config\connect.php');
     <link rel="stylesheet" href="Styles/header.css">
     <link rel="stylesheet" href="Styles/preloader.css">
     <title>Добро пожаловать!</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
     <? require_once(ROOT.'\siteItems\preloader.php'); ?>
