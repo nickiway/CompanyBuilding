@@ -25,18 +25,12 @@ button,input[type=submit],a,li,svg{
     text-shadow: 0px 0px 3px #000 !important; 
     color:#fff !important;
 }
-body{
-    /*background: linear-gradient(to right, #F6EFD2, #CEAD78);*/
-    background-image: url("../images/Background.jpg");
-    background-size: auto;
-}
-.main_box{
-    width: 90%;
-    margin: 100px auto 0 auto;
-    border: 1pt solid #000;
-    padding: 20px 0 20px 0;
-    background-color: #fff;
-}
 .height-full{
     height:100% !important;
+}
+.align-center {
+    align-items: center !important;
+}
+.display-flex{
+    display: flex !important;
 }

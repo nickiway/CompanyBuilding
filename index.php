@@ -21,21 +21,20 @@ require_once(ROOT.'\config\connect.php');
     <link rel="stylesheet" href="Styles/preloader.css">
     <title>Добро пожаловать!</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
     <? require_once(ROOT.'\siteItems\preloader.php'); ?>
     <!-- Header -->
     <? require_once(ROOT.'\siteItems\header.php'); ?> 
     <!-- Body -->
-    <div class="main_box">
-        <div class="main">
-            <div class="toCenter">
-                <div class="main__namer font-bold">Товары на Ваш выбор</div>
+    <div class="toCenter">
+        <div class="main display-flex">
+            <div class="main__filter" >
+                Filter
             </div>
-            <div class="toCenter">
-                <div class="main__items toCenter">
-                    <? require_once(ROOT.'\functions\getGoods.php');?>
-                </div>
+            <div class="main__items toCenter">
+                <? require_once(ROOT.'\functions\getGoods.php');?>
             </div>
         </div>
     </div>

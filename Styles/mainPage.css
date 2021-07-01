@@ -1,70 +1,69 @@
-.main__namer{
-    font-size: 36px;
-    text-align: left;
-    margin: 40px 0px;
-    padding:20px;
-    width: 1320px;
-    font-family: 'Kurale';
-    src: url(../fonts/Kurale-Regular.ttf);
+.main{
+    background-color: #fff;
+    max-width: 1720px;
 }
 .main__items{
-    width: 1320px;
+    width: calc( 100% - 300px);
+}
+.main__filter{
+    width: 300px;
+    height:auto;
+    padding:30px 20px;
+    border-right: 1px solid gray;
 }
 .cards{
-    border-radius: 15px;
-    overflow: hidden;
-    width: 400px;
-    background-color: #fff;
+    position: relative;
+    width: 350px;
+    border-bottom: 3px solid #000;
     margin:20px 20px;
-    border:2px solid brown;
-    box-shadow: 0px 0px 10px rgba(153, 6, 6, 1);
+}
+.cards > img{
+    width: 32px;
+    z-index: 21;
+    cursor: pointer;
+    top:10px;
+    position: absolute;
+    transition: .1s ease-in-out;
+}
+.cards > img:hover{
+    transform: scale(1.1);
+    transition: .1s ease-in-out;
+}
+.right-side{
+    right: 20px;
+} .left-side{
+    left: 20px;
 }
 .cards__image{
     background-position: center;
-    background-size: cover;
-    border-bottom: 2px solid #cccccc;
+    background-size: contain;
     position: relative;
     background-repeat: no-repeat;
-    height:270px;
+    height:250px;
 }
 .cards__information{
     padding:30px 10px;
-    margin:20px 0px 
 }
 .cards__name{
     text-transform: uppercase;
     font-family: 'Kurale';
-    font-size: 20px;
-    padding: 15px;
-    border-top:4px solid #fff;
-    border-bottom: 4px solid #fff;
+    text-align: start;
+    margin: 0px 20px;
     src: url(../fonts/Kurale-Regular.ttf);
-    word-spacing: 9px;
-    letter-spacing: 2px;
+    font-size: 20px;
+    
 }
 .cards__button{
     width: 100%;
     border:none;
     font-style: normal;
     padding:10px;
-    font-size: 16px; 
-    background-color: brown;
     transition: .5s;
 }
 .cards__button:hover{
-    background-color:rgb(112, 7, 7);
     transition: .5s;
 }
-.cards__sale{
-    position: absolute;
-    z-index: 10;
-    background-color: #fff;
-    padding:10px 20px;
-    top:10px;
-    font-size: 17px;
-    border-radius: 10px;
-    right: 10px;
-}
+
 .set-gray{
     background-color: rgba(0,0,0,.6);
     position: absolute;
@@ -74,35 +73,21 @@
     height: 100%;
 }
 .cards__cost{
-    font-size:18px;
+    font-size:20px;
     margin: 0px 10px ;
 }
-.display-flex{
-    display: flex;
-}
 .cards__description{
-    margin:15px;
+    margin:20px;
+    text-align: justify;
 }
-.cards__saler{
-    border:3px solid #fff;
-    font-size: 20px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    box-shadow: 0px 0px 5px #fff;
-    border-radius: 10px;
-    background-color: #fff;
-    position: absolute;
-    top:10px;
-    left:10px;
-}
+
 .cards__cost-info{
     position: absolute;
-    bottom:20px;
+    bottom:18px;
     width: 100%;
 }
 .cards__order{
-    background-color: rgba(0,0,0,.5);
+    background-color: rgba(0,0,0,.7);
     width: 100%;
     height:100%;
     position: fixed;
@@ -117,9 +102,6 @@
     background-color: #fff;
     z-index: 25;
 }
-.cards__image-details{
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height:270px;
+.cards__deteails img{
+    width: 32px;
 }
