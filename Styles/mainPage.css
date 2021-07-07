@@ -1,6 +1,8 @@
-.main{
+.main-cards{
     background-color: #fff;
     max-width: 1720px;
+    display: flex;
+    justify-content: center;
 }
 .main__items{
     width: calc( 100% - 300px);
@@ -86,7 +88,7 @@
     bottom:18px;
     width: 100%;
 }
-.cards__order{
+.cards__details{
     background-color: rgba(0,0,0,.7);
     width: 100%;
     height:100%;
@@ -94,7 +96,11 @@
     top:0;
     left: 0;
     display: none;
-    z-index: 20;
+    z-index: 22;
+}
+.cards__sale{
+    color:gray;
+    font-size: 15px;
 }
 .cards__field{
     width: 500px;
@@ -102,6 +108,10 @@
     background-color: #fff;
     z-index: 25;
 }
-.cards__deteails img{
-    width: 32px;
+.search__cancel-button{
+    display: none;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    color:red;
 }

@@ -1,3 +1,12 @@
+<?php
+// Search block
+$getQuerySerach = null;
+if(empty($_GET['Cards']) == false) { 
+    $getQuerySerach = $_GET['Cards'];
+    $cancelButton = "flex"; 
+}  else passthru(1);
+
+?>
 <header>
     <div class="toCenter">
         <div class="container">
@@ -12,6 +21,13 @@
                     <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
                 </svg>
             </div>
+            <div>
+                <form class = "search">
+                <input id="autoComplete" type="search" dir="ltr" spellcheck=false autocorrect="off" autocomplete="off" autocapitalize="off" name = "Cards" maxlength="2048" tabindex="1">
+                    <input type="submit" value="Search">
+                </form>
+                <button onclick = "window.location.href = 'index.php'" class = "search__cancel-button font-bold" style = "display:<?php echo $cancelButton; ?>">Clear All</button>
+            </div>
         </div>
     </div>
     <div class="toCenter">
@@ -24,4 +40,5 @@
             </ul>
         </nav>
     </div>
+    
 </header>

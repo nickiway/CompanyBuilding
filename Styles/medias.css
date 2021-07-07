@@ -2,4 +2,10 @@
     nav>ul{
         display: block !important; 
     }   
+    .main-cards{
+        display: block !important;
+    }
+    .main__filter,.main__items{
+        width: 100% !important;
+    }
 }

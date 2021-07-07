@@ -13,7 +13,7 @@ function calculateSum(id, cost, sale) {
 jQuery(function($){
 $(document).mouseup(function (e){ 
     var div = $(".cards__field"); 
-    var currency__popup = $(".cards__order"); 
+    var currency__popup = $(".cards__details"); 
     if (!div.is(e.target) 
         && div.has(e.target).length === 0) {
         currency__popup.fadeOut("slow");

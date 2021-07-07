@@ -24,12 +24,12 @@ require_once(ROOT.'\config\connect.php');
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
-    <? require_once(ROOT.'\siteItems\preloader.php'); ?>
+    <!-- <? require_once(ROOT.'\siteItems\preloader.php'); ?> -->
     <!-- Header -->
     <? require_once(ROOT.'\siteItems\header.php'); ?> 
     <!-- Body -->
     <div class="toCenter">
-        <div class="main display-flex">
+        <div class="main-cards">
             <div class="main__filter" >
                 Filter
             </div>
