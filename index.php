@@ -26,12 +26,27 @@ require_once(ROOT.'\config\connect.php');
 <body>
     <!-- <? require_once(ROOT.'\siteItems\preloader.php'); ?> -->
     <!-- Header -->
+    <? 
+        require_once('functions/sort.php');
+        require_once('functions/search.php');
+    ?>
     <? require_once(ROOT.'\siteItems\header.php'); ?> 
     <!-- Body -->
     <div class="toCenter">
         <div class="main-cards">
             <div class="main__filter" >
                 Filter
+                <form method="get" >
+                    <select onchange="if (this.value) window.location.href = this.value">
+                        <option style = "display:none;" value="current">Сортировать по имени (по убыванию)</option>
+                        <optgroup label = "По названию"></optgroup>
+                        <option value="index.php?sort=Name&Search=<?echo $getQuerySerach?>">Сортировать по имени (по возвростанию)</option>
+                        <option value="index.php?sort=Name-desc&Search=<?echo $getQuerySerach?>">Сортировать по имени (по убыванию)</option>
+                        <optgroup label = "По цене"></optgroup>
+                        <option value="index.php?sort=Cost&Search=<?echo $getQuerySerach?>">Сортировать по цене (по возвростанию)</option>
+                        <option value="index.php?sort=Cost-desc&Search=<?echo $getQuerySerach?>">Сортировать по цене (по убыванию)</option>
+                    </select>
+                </form>
             </div>
             <div class="main__items toCenter">
                 <? require_once(ROOT.'\functions\getGoods.php');?>

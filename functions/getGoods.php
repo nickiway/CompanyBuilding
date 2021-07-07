@@ -1,6 +1,6 @@
 <?php
 // Cards class 
-$getItems = mysqli_query($connect, "SELECT * FROM goods WHERE Name LIKE '%$getQuerySerach%'");
+$getItems = mysqli_query($connect, "SELECT * FROM goods WHERE Name LIKE '%$getQuerySerach%' ORDER BY  $sort");
 class GoodsCards{
     // Base variabes
     public $cost,$name,$sale,$image,$stock,$description;
@@ -25,13 +25,15 @@ class GoodsCards{
     }
 }
 // Showing up new cards
-while($cardItem = mysqli_fetch_assoc($getItems)){
+ while($cardItem = mysqli_fetch_assoc($getItems)){
     $card = new GoodsCards($cardItem['Name'],$cardItem['Cost'],$cardItem['ImageLink'],$cardItem['Sale'],$cardItem['In stock'],$cardItem['Description']);
     // Checking whethear the items in stock
     $textDecoration = $displaySale = "none";  
     $displaySale = $card->is_sale()[1];
     $textDecoration = $card->is_sale()[2];
-    if ($cardItem['In stock'] == 0) continue;
+    // Cost of goods with sale
+    $deltaCost = intval($card->cost - $card->sale);
+    if ($cardItem['In stock'] == 0 || $deltaCost < 0) continue;
     // Cost in cart in start 
     if($card->is_sale()[0] > 1) $startCost = $card->sale;
     else $startCost = $card->cost;
@@ -44,12 +46,13 @@ while($cardItem = mysqli_fetch_assoc($getItems)){
             <div class='cards__information'>
                 <div class= 'display-flex align-center '>
                     <span class='cards__name  font-bold '>".$card->name."</span>
-                    <span class='cards__cost ' style = 'display : ".$displaySale."'>₴".$cardItem['Sale']."</span>
+                    <span class='cards__cost ' style = 'display : ".$displaySale."'>₴".$deltaCost."</span>
                     <span class='cards__cost ".$card->is_sale()[3]."' style = 'text-decoration:".$textDecoration.";' >₴".$cardItem['Cost']."</span>
                 </div>
                 <div class='cards__description'>".mb_strimwidth($card->description,0,100,'...')."</div>
            </div>
     </div>";
+    
     //Creating a cart for purchasing 
     echo "
     <div id = '".$cardItem['ID']."' class='cards__details toCenter'>
@@ -63,4 +66,5 @@ while($cardItem = mysqli_fetch_assoc($getItems)){
     </div>
     ";
     }
-
+    //Case search result = null
+    if (mysqli_num_rows($getItems) == 0) echo "Sorry, we haven't found anything :( ";

@@ -1,12 +1,3 @@
-<?php
-// Search block
-$getQuerySerach = null;
-if(empty($_GET['Cards']) == false) { 
-    $getQuerySerach = $_GET['Cards'];
-    $cancelButton = "flex"; 
-}  else passthru(1);
-
-?>
 <header>
     <div class="toCenter">
         <div class="container">
@@ -22,8 +13,8 @@ if(empty($_GET['Cards']) == false) {
                 </svg>
             </div>
             <div>
-                <form class = "search">
-                <input id="autoComplete" type="search" dir="ltr" spellcheck=false autocorrect="off" autocomplete="off" autocapitalize="off" name = "Cards" maxlength="2048" tabindex="1">
+                <form method = "get" class = "search">
+                <input id="autoComplete" type="search" dir="ltr" spellcheck=false autocorrect="off" autocomplete="off" autocapitalize="off" name = "Search" maxlength="2048" tabindex="1">
                     <input type="submit" value="Search">
                 </form>
                 <button onclick = "window.location.href = 'index.php'" class = "search__cancel-button font-bold" style = "display:<?php echo $cancelButton; ?>">Clear All</button>
