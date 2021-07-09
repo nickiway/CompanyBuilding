@@ -38,18 +38,19 @@ require_once(ROOT.'\config\connect.php');
                 Filter
                 <form method="get" >
                     <select onchange="if (this.value) window.location.href = this.value">
-                        <option style = "display:none;" value="current">Сортировать по имени (по убыванию)</option>
+                        <option style = "display:none;" value="current"><?=$sortLable;?></option>
                         <optgroup label = "По названию"></optgroup>
-                        <option value="index.php?sort=Name&Search=<?echo $getQuerySerach?>">Сортировать по имени (по возвростанию)</option>
-                        <option value="index.php?sort=Name-desc&Search=<?echo $getQuerySerach?>">Сортировать по имени (по убыванию)</option>
+                        <option value="index.php?sort=Name&Search=<?= $getQuerySerach?>">Сортировать по имени (по возвростанию)</option>
+                        <option value="index.php?sort=Name-desc&Search=<?= $getQuerySerach?>">Сортировать по имени (по убыванию)</option>
                         <optgroup label = "По цене"></optgroup>
-                        <option value="index.php?sort=Cost&Search=<?echo $getQuerySerach?>">Сортировать по цене (по возвростанию)</option>
-                        <option value="index.php?sort=Cost-desc&Search=<?echo $getQuerySerach?>">Сортировать по цене (по убыванию)</option>
+                        <option value="index.php?sort=Cost&Search=<?= $getQuerySerach?>">Сортировать по имени (по возвростанию)</option>
+                        <option value="index.php?sort=Cost-desc&Search=<?= $getQuerySerach?>">Сортировать по цене (по убыванию)</option>
                     </select>
                 </form>
             </div>
             <div class="main__items toCenter">
                 <? require_once(ROOT.'\functions\getGoods.php');?>
+                <p id="output"></p>
             </div>
         </div>
     </div>
@@ -57,4 +58,5 @@ require_once(ROOT.'\config\connect.php');
 </body>
 <script src="JavaScript/preloader.js"></script>
 <script src="JavaScript/mainPage.js"></script>
+<script src="JavaScript/cart.js"></script>
 </html>
