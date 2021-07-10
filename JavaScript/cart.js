@@ -36,6 +36,7 @@ function addCart(id, name, price, image) {
         cart.push(item);  
     }
     saveCart();     
+    console.log(cart);
 }
 function clearCart() {
     cart = null ;
