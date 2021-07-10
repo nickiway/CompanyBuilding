@@ -1,9 +1,17 @@
 let cart = [];
-if(sessionStorage.getItem('shoppingCart') != null ) cart.push(sessionStorage.getItem('shoppingCart'));
-let output = document.getElementById("output");
+// Uploading the cart till the session 
+function loadCart() {
+    if (JSON.parse(sessionStorage.getItem('shoppingCart')) != null) {
+        var length = JSON.parse(sessionStorage.getItem('shoppingCart')).length;
+        for (let index = 0; index < length; index++) {
+            cart.push(JSON.parse(sessionStorage.getItem('shoppingCart'))[index]);
+        }
+    }
+}
 // Save cart 
+loadCart();
 function saveCart() {
-    sessionStorage.setItem('shoppingCart' , cart);    
+    sessionStorage.setItem('shoppingCart' , JSON.stringify(cart));    
 }
 // Constructor
 function Item(id, name, price, image, count) {
@@ -15,21 +23,21 @@ function Item(id, name, price, image, count) {
   }
 // Add to Cart 
 function addCart(id, name, price, image) {
-    if (cart.length == null) {
-        var item = new Item(id, name, price, image, 1);
-        cart.push(item);
-    }
+    var check = 0;
     for (var item in cart) {
-        console.log(cart[item].id);
-        if (cart[item].id = id ){
+        if (cart[item].id == id) {
             cart[item].count++;
-        } else{
-            var item = new Item(id, name, price, image, 1);
-            cart.push(item);
+            check++;
             break;
-        }        
+        }
     }
-    saveCart();
-    console.log(cart);
-    console.log(sessionStorage.getItem('shoppingCart'));
+    if (check == 0) {
+        var item = new Item(id, name, price, image, 1);
+        cart.push(item);  
+    }
+    saveCart();     
+}
+function clearCart() {
+    cart = null ;
+    sessionStorage.removeItem('shoppingCart');
 }

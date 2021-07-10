@@ -40,10 +40,10 @@ require_once(ROOT.'\config\connect.php');
                     <select onchange="if (this.value) window.location.href = this.value">
                         <option style = "display:none;" value="current"><?=$sortLable;?></option>
                         <optgroup label = "По названию"></optgroup>
-                        <option value="index.php?sort=Name&Search=<?= $getQuerySerach?>">Сортировать по имени (по возвростанию)</option>
-                        <option value="index.php?sort=Name-desc&Search=<?= $getQuerySerach?>">Сортировать по имени (по убыванию)</option>
+                        <option value="index.php?sort=Name&Search=<?= $getQuerySerach?>">Сортировать по имени (А-Я)</option>
+                        <option value="index.php?sort=Name-desc&Search=<?= $getQuerySerach?>">Сортировать по имени (Я-А)</option>
                         <optgroup label = "По цене"></optgroup>
-                        <option value="index.php?sort=Cost&Search=<?= $getQuerySerach?>">Сортировать по имени (по возвростанию)</option>
+                        <option value="index.php?sort=Cost&Search=<?= $getQuerySerach?>">Сортировать по цене (по возвростанию)</option>
                         <option value="index.php?sort=Cost-desc&Search=<?= $getQuerySerach?>">Сортировать по цене (по убыванию)</option>
                     </select>
                 </form>
