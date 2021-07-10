@@ -1,3 +1,4 @@
+var cartCount = 0;
 let cart = [];
 // Uploading the cart till the session 
 function loadCart() {
@@ -21,6 +22,12 @@ function Item(id, name, price, image, count) {
     this.image = image;
     this.count = count;
   }
+
+// Getting Count of Cart just for load
+for (var item in cart) cartCount += cart[item].count;  
+console.log(cart); 
+document.getElementById("cartResult").innerHTML = cartCount;
+
 // Add to Cart 
 function addCart(id, name, price, image) {
     var check = 0;
@@ -28,17 +35,22 @@ function addCart(id, name, price, image) {
         if (cart[item].id == id) {
             cart[item].count++;
             check++;
-            break;
         }
     }
     if (check == 0) {
         var item = new Item(id, name, price, image, 1);
         cart.push(item);  
     }
-    saveCart();     
-    console.log(cart);
+    cartCount++;
+    saveCart();  
+// Uploading the counter if we click
+    document.getElementById("cartResult").innerHTML = cartCount;
 }
+
+// Clear Cart
 function clearCart() {
-    cart = null ;
-    sessionStorage.removeItem('shoppingCart');
+    cart = [];
+    cartCount = 0;
+    sessionStorage.setItem('shoppingCart', null);
+    document.getElementById("cartResult").innerHTML = cartCount;
 }
