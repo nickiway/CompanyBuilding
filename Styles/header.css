@@ -72,3 +72,16 @@ nav > ul > li:hover{
     background-size: cover;
     background-repeat: no-repeat;
 }
+.cart__field{
+    width: 900px;
+    overflow: auto;
+    height: 500px;
+    border:2px solid #000;
+    border-radius: 20px;
+    background-color: #fff;
+    z-index: 25;
+}
+.cart__image{
+    width: 96px;
+    height: 96px;
+}

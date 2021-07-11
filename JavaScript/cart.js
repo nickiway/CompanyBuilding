@@ -9,8 +9,8 @@ function loadCart() {
         }
     }
 }
-// Save cart 
 loadCart();
+// Save cart 
 function saveCart() {
     sessionStorage.setItem('shoppingCart' , JSON.stringify(cart));    
 }
@@ -25,9 +25,22 @@ function Item(id, name, price, image, count) {
 
 // Getting Count of Cart just for load
 for (var item in cart) cartCount += cart[item].count;  
-console.log(cart); 
 document.getElementById("cartResult").innerHTML = cartCount;
-
+// Uploading Cart
+function uploadCart() {
+    var cartBlock = document.getElementById("cart");
+    cartBlock.innerHTML = null;
+    var totalPrice = 0;
+    cartBlock.innerHTML += "<h3>Корзина</h3>";
+    for (var item in cart) {
+        totalPrice += Number(cart[item].price) * cart[item].count;
+        cartBlock.innerHTML += "<p class = 'toCenter'>"+
+        "<img class = \"cart__image\" src = \"../images/" +
+         cart[item].image+ "\">" +  cart[item].name+ "  "+
+         cart[item].price +"  "+  cart[item].count + "</p>";
+    }
+    cartBlock.innerHTML += "Total price : " + totalPrice;
+}
 // Add to Cart 
 function addCart(id, name, price, image) {
     var check = 0;
@@ -43,6 +56,7 @@ function addCart(id, name, price, image) {
     }
     cartCount++;
     saveCart();  
+    uploadCart();
 // Uploading the counter if we click
     document.getElementById("cartResult").innerHTML = cartCount;
 }
@@ -53,4 +67,9 @@ function clearCart() {
     cartCount = 0;
     sessionStorage.setItem('shoppingCart', null);
     document.getElementById("cartResult").innerHTML = cartCount;
+    uploadCart();
+}
+function openCart() {
+    var cart = document.getElementById("cart-container");
+    cart.style.display = "flex";
 }

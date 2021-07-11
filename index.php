@@ -33,6 +33,13 @@ require_once(ROOT.'\config\connect.php');
     <? require_once(ROOT.'\siteItems\header.php'); ?> 
     <!-- Body -->
     <div class="toCenter">
+        <div id = "cart-container" class="cards__details toCenter">
+            <div id = "cart" class="cart__field">
+                <script> 
+                 uploadCart();
+                </script>
+            </div>
+        </div>
         <div class="main-cards">
             <div class="main__filter" >
                 Filter
@@ -58,5 +65,4 @@ require_once(ROOT.'\config\connect.php');
 </body>
 <script src="JavaScript/preloader.js"></script>
 <script src="JavaScript/mainPage.js"></script>
-<script src="JavaScript/cart.js"></script>
 </html>
