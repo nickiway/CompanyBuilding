@@ -34,7 +34,7 @@ require_once(ROOT.'\config\connect.php');
     <!-- Body -->
     <div class="toCenter">
         <div id = "cart-container" class="cards__details toCenter">
-            <div id = "cart" class="cart__field">
+            <div id = "cart" class="cards__field cart__field">
                 <script> 
                  uploadCart();
                 </script>

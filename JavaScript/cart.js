@@ -24,8 +24,12 @@ function Item(id, name, price, image, count) {
   }
 
 // Getting Count of Cart just for load
-for (var item in cart) cartCount += cart[item].count;  
-document.getElementById("cartResult").innerHTML = cartCount;
+for (var item in cart) cartCount += cart[item].count;
+uploadCounter();  
+// Uploadgin Counter of Cart
+function uploadCounter() {
+    document.getElementById("cartResult").innerHTML = cartCount;
+}
 // Uploading Cart
 function uploadCart() {
     var cartBlock = document.getElementById("cart");
@@ -34,10 +38,16 @@ function uploadCart() {
     cartBlock.innerHTML += "<h3>Корзина</h3>";
     for (var item in cart) {
         totalPrice += Number(cart[item].price) * cart[item].count;
-        cartBlock.innerHTML += "<p class = 'toCenter'>"+
-        "<img class = \"cart__image\" src = \"../images/" +
-         cart[item].image+ "\">" +  cart[item].name+ "  "+
-         cart[item].price +"  "+  cart[item].count + "</p>";
+        cartBlock.innerHTML += 
+        "<div class = 'cart__row display-flex align-center'>"+
+            "<div class = 'cart__image toCenter'>" +
+                "<img src = '../images/" + cart[item].image+ "'> "+
+            "</div>"+
+            "<p class = 'cart__name'>" +  cart[item].name+ "</p>  "+
+            cart[item].price +"  "+  cart[item].count + "<button onclick = 'deleteTheSection("+ cart[item].id+")'>delete</button>"+
+            
+            "<input id =  \"count"+cart[item].id +"\"type = \"number\" min = 1 value = "+ cart[item].count+" onchange = 'decreaseCartNum("+ cart[item].id+")' >"+
+         "</div>";
     }
     cartBlock.innerHTML += "Total price : " + totalPrice;
 }
@@ -58,7 +68,7 @@ function addCart(id, name, price, image) {
     saveCart();  
     uploadCart();
 // Uploading the counter if we click
-    document.getElementById("cartResult").innerHTML = cartCount;
+    uploadCounter();
 }
 
 // Clear Cart
@@ -66,10 +76,40 @@ function clearCart() {
     cart = [];
     cartCount = 0;
     sessionStorage.setItem('shoppingCart', null);
-    document.getElementById("cartResult").innerHTML = cartCount;
+    uploadCounter();
     uploadCart();
 }
 function openCart() {
     var cart = document.getElementById("cart-container");
     cart.style.display = "flex";
+}
+function deleteTheSection(checkId) {
+    var deleteItem = 0;
+    for (item in cart) {
+        if (cart[item].id == checkId) {
+            deleteItem = cart[item].count;
+            if (cart.length > 1) {
+                cart.splice(cart.indexOf(cart[item]), 1); 
+            } else{
+                cart.splice(cart.indexOf(cart[item])); 
+            }
+            cartCount -= deleteItem;
+        }
+    }
+    uploadCounter();
+    saveCart();
+    uploadCart();
+}
+function decreaseCartNum(checkId) {
+    var itemCount =  document.getElementById("count"+checkId).value;
+    cartCount = 0;
+    for (item in cart) {
+        if (cart[item].id == checkId) {
+            cart[item].count = itemCount;
+        }
+    cartCount += Number(cart[item].count);
+    }
+    uploadCounter();
+    saveCart();
+    uploadCart();
 }

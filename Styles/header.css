@@ -1,3 +1,4 @@
+/* Header Design */
 header{
     height: auto;
     filter: grayscale(50%);
@@ -72,6 +73,7 @@ nav > ul > li:hover{
     background-size: cover;
     background-repeat: no-repeat;
 }
+/* Cart Design */
 .cart__field{
     width: 900px;
     overflow: auto;
@@ -81,7 +83,20 @@ nav > ul > li:hover{
     background-color: #fff;
     z-index: 25;
 }
-.cart__image{
-    width: 96px;
-    height: 96px;
+.cart__row{ 
+    background-color: #f4f4f4;
+    margin:20px 0px;
+}
+.cart__image {
+    width: 128px;
+    height: 128px;
+    background-color: #fff;
+    border-radius: 100%;
+    overflow: hidden;
+}
+.cart__image img{
+    width: 100%;
+}
+.cart__name{ 
+    width: 20%;
 }

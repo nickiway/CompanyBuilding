@@ -16,7 +16,7 @@ $(document).mouseup(function (e){
     var div = $(".cards__field"); 
     var currency__popup = $(".cards__details"); 
     if (!div.is(e.target) 
-        && div.has(e.target).length === 0) {
+        && div.has(e.target).length === 0  ) {
         currency__popup.fadeOut("slow");
     }
 });
