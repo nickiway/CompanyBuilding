@@ -15,12 +15,19 @@
     <h1 class = "toCenter">Registration !</h1>
     <div class="toCenter">
         <form class = "register font-bold" method = post>
-            <br><input type="text" name = "Name" placeholder = "name">
-            <br><input type="email" name = "Email" placeholder = "email">
-            <br><input type="password" id = "Pass" name = "Pass" placeholder = "password">
-            <br><input type="password" name = "PassRepeat" placeholder = "Repeat password">
-            <br><input type="submit" value="Register">
-        </form>
+            
+            <input type="text" name = "Name" id = "name" placeholder = "name">
+
+                <div class = "dispay-flex position-relative setShadow">
+                    <input type="email" name = "Email" placeholder = "email">
+                    <label for="name" class = "register__notification font-bold">✕</label> 
+                </div>
+                <input type="password" id = "Pass" name = "Pass" placeholder = "password">
+        
+                
+                <br><input type="password" name = "PassRepeat" placeholder = "Repeat password">
+                <br><input type="submit" value="Register">
+            </form>
     </div>
     <p class = "toCenter">
         <button class = "register__button" onclick = "showPass('Pass')">Show pass</button>

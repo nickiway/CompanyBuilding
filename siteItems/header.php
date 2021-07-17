@@ -15,8 +15,8 @@
                 </svg>
             </div>
             <div>
-                <form method = "get" class = "search">
-                <input id="autoComplete" type="search" dir="ltr" spellcheck=false autocorrect="off" autocomplete="off" autocapitalize="off" name = "Search" maxlength="2048" tabindex="1">
+                <form  method = "get" class = "search">
+                <input id="autoComplete" type="search" dir="ltr" spellcheck=false autocorrect="off" autocomplete="off" autocapitalize="off"  name = "Search" maxlength="2048" tabindex="1">
                     <input type="submit" value="Search">
                 </form>
                 <button onclick = "window.location.href = 'index.php'" class = "search__cancel-button font-bold" style = "display:<?php echo $cancelButton; ?>">Clear All</button>

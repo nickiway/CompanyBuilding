@@ -1,7 +1,25 @@
 .register input, .register__button{ 
-    padding: 20px;
+    padding: 20px 45px 20px 20px;
+    text-align: center;
     min-width: 200px;
     margin:10px;
     font-size: 16px;
     font-weight: bold;
+    border:2px solid #000;
+}
+.wrong-input{
+    border:2px solid red;
+    color:red;
+}
+.register__notification{
+    position: absolute;
+    background-color: red;
+    font-size: 20px;
+    width: 32px;
+    height: 32px;
+    right:20px;
+    top:calc(50% - 16px);
+    border-radius: 100%;
+    display: none;
+    
 }

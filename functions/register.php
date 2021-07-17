@@ -17,13 +17,15 @@ function checkMail($data, $connect){
         if ($row['Email'] == $data['Email'])  { return true; break;} 
     }
 }
+// Check Name
+
 // Checkign if some of parametrs are incorect or repeateble
 if($_POST != null && $data['Password'] == $data['PasswordRepeat'] >= 6 && preg_match($pattern, $data['Email'])){
     if (checkMail($data, $connect) != true ) {
         $passwordHash =  password_hash($data['Password'], PASSWORD_DEFAULT);
         mysqli_query($connect, "INSERT INTO `users`(Name,Email,Password) VALUES ('$data[Name]','$data[Email]','$passwordHash')");
     } else{
-        die("You have already used this email.");
+        die("<h1 class = 'toCenter'>You have already used this email.</h1>");
     }
 }
 
