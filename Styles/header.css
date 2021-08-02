@@ -1,9 +1,6 @@
 /* Header Design */
 header{
-    height: auto;
-    filter: grayscale(50%);
-    background-color: white;
-    margin: 0;
+    background-color: #fff !important;    
 }
 nav{
     width: 100%;
@@ -37,14 +34,14 @@ nav{
 .networks>div:hover i{
     color: #42413D;
 }
-nav> .cont_min{
+nav> .extra-info{
     background-color: #42413D;
     padding: 10px 150px 10px 150px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.cont_max{
+.main-menu{
     background-color: #fff;
     padding: 10px 150px 15px 200px;
     display: flex;
@@ -75,11 +72,13 @@ nav> .cont_min{
     width: auto;
     display: flex;
     list-style: none;
-    font-size: 16pt;
+    font-size: 16px;
     color: #545454;
+    border-right: 3px solid #545454;
+    padding: 10px 0px;
 }
 .menu>li{
-    margin-right: 25px;
+    margin: 0px 12.5px;
     transition: 0.2s;
 }
 .menu>li:hover{
@@ -88,17 +87,8 @@ nav> .cont_min{
 .menu>li:nth-child(4){
     margin-right: 10px;
 }
-.line{
-    height: 40px;
-    width: 2px;
-    background-color: #545454;
-    margin-right: 10px;
-}
-.box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
+
 .magnifier{
     border: 1pt solid #545454;
     margin: 0 7px 0 7px;
@@ -116,6 +106,7 @@ nav> .cont_min{
 }
 .search, .search:hover, .search:focus, .search:visited{
     border: 0;
+    outline: 0;
 }
 .login, .cart{
     width: 40px;
