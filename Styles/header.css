@@ -43,7 +43,7 @@ nav> .extra-info{
 }
 .main-menu{
     background-color: #fff;
-    padding: 10px 150px 15px 200px;
+    padding: 10px 150px 15px 150px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -85,26 +85,26 @@ nav> .extra-info{
     color: #B68F40;
 }
 .menu>li:nth-child(4){
-    margin-right: 10px;
+    margin: 0 10px 0 10px;
 }
 
 
 .magnifier{
     border: 1pt solid #545454;
     margin: 0 7px 0 7px;
-    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 7px 10px 7px 10px;
+    padding: 0;
 }
 .magnifier>i{
-    margin-left: 5px;
+    margin: 0 0 0 5px;
 }
 .magnifier>input{
     font-size: 14pt;
+    margin: 7px 10px 7px 10px;
 }
-.search, .search:hover, .search:focus, .search:visited{
+.search, .search:hover, .search:focus, .search:visited, .search:placeholder-shown{
     border: 0;
     outline: 0;
 }
@@ -119,6 +119,21 @@ nav> .extra-info{
 .login:hover, .cart:hover{
     cursor: pointer;
     color: #42413D;
+}
+.cont_magn{
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 40px;
+    height: 45px;
+    background-color: #FFCE2B;
+    transition: 0.2s;
+}
+.cont_magn:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px 1px 0;
 }
 /* Cart Design */
 .cart__field{
