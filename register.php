@@ -22,10 +22,14 @@
                     <input type="email" name = "Email" placeholder = "email">
                     <label for="name" class = "register__notification font-bold">✕</label> 
                 </div>
-                <input type="password" id = "Pass" name = "Pass" placeholder = "password">
         
+                <div class = "dispay-flex position-relative setShadow">
+                    <input type="password" id = "Pass" name = "Pass" placeholder = "password">
+                    <label for= "Pass" class = "register__notification font-bold">✕</label> 
+                </div>        
                 
-                <br><input type="password" name = "PassRepeat" placeholder = "Repeat password">
+                <input type="password" name = "PassRepeat" placeholder = "Repeat password">
+
                 <br><input type="submit" value="Register">
             </form>
     </div>

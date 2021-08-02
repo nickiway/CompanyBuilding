@@ -41,6 +41,16 @@ setInterval(() => {
             labelItems[0].style.display = "block";
     } else labelItems[0].style.display = "none";    
     // Password Checking 
-    if (inputItems['Pass'].value.length <= 6 && inputItems['Pass'].value != "") inputItems['Pass'].style.border = "2px solid red";
-    else inputItems['Pass'].style.border = "2px solid black";
+    if (inputItems['Pass'].value.length <= 6 && inputItems['Pass'].value != "") {
+        labelItems[1].style.display = "block",
+        labelItems[1].style.backgroundColor = "red",
+        labelItems[1].innerHTML = "✕";
+        
+    }
+    else if (inputItems['Pass'].value == "") 
+        labelItems[1].style.display = "none";
+    else{
+        labelItems[1].style.backgroundColor = "green";
+        labelItems[1].innerHTML = "✔";
+    }
 }, 100);
