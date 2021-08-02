@@ -27,7 +27,7 @@
         </div>
         <div class="cont_max">
             <div>
-                <img src="../icons/Лого 1.png" alt="" width="350px">
+                <img src="../icons/Logo_1.png" alt="" width="350px">
             </div>
             <div class="box">
                 <ul class="menu">
