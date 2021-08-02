@@ -1,7 +1,7 @@
 <?php
 // connect to data base
 define("SERVER",'localhost');
-define("LOGIN",'mysql');
+define("LOGIN",'root');
 define("PASSWORD",'mysql');
-define("DATABASE",'buildingCompany');
+define("DATABASE",'buildingcompany');
 $connect = mysqli_connect(SERVER,LOGIN,PASSWORD,DATABASE);
