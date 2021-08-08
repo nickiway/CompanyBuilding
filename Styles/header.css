@@ -13,7 +13,7 @@ nav{
     align-items: center;
     justify-content: center;
     color: #fff;
-    font-size: 13pt;
+    font-size: 14px;
 }
 .contacts>div:nth-child(1){
     margin-right: 20px;
@@ -34,7 +34,7 @@ nav{
 .networks>div:hover i{
     color: #42413D;
 }
-nav> .extra-info{
+nav>.extra-info{
     background-color: #42413D;
     padding: 10px 150px 10px 150px;
     display: flex;
@@ -47,6 +47,12 @@ nav> .extra-info{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.main-menu>a{
+    transition: 0.2s;
+}
+.main-menu>a:hover img{
+    cursor: pointer;
 }
 .networks{
     display: flex;
@@ -81,8 +87,9 @@ nav> .extra-info{
     margin: 0px 12.5px;
     transition: 0.2s;
 }
-.menu>li:hover{
+.menu>li>a:hover{
     color: #B68F40;
+    cursor: pointer;
 }
 .menu>li:nth-child(4){
     margin: 0 10px 0 10px;
@@ -90,22 +97,43 @@ nav> .extra-info{
 
 
 .magnifier{
-    border: 1pt solid #545454;
     margin: 0 7px 0 7px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0;
 }
-.magnifier>i{
-    margin: 0 0 0 5px;
+.magnifier>form{
+    border: 1px solid #545454;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 0 7px;
 }
-.magnifier>input{
-    font-size: 14pt;
-    margin: 7px 10px 7px 10px;
+.magnifier>form>div{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+}
+.magnifier>form>div:hover{
+    background-color: #42413D;
+    cursor: pointer;
+}
+.magnifier>form>div>i{
+    color: #42413D;
+    transition: 0.2s;
+}
+.magnifier>form>div:hover i{
+    color: #FFCE2B;
+}
+.magnifier>form>div:active{
+    transform: scale(0.9);
 }
 .search, .search:hover, .search:focus, .search:visited, .search:placeholder-shown{
+    font-size: 16px;
     border: 0;
+    margin: 0 7px 0 0;
     outline: 0;
 }
 .login, .cart{

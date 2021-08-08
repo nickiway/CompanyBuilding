@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e4f21a2-f966-41e4-9e83-718a6592dc9d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/icons/Logo2.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Styles/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/Styles/footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Styles/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/Styles/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/siteItems/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/siteItems/footer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/siteItems/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/siteItems/header.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -121,7 +125,12 @@
       <workItem from="1627727973686" duration="5503000" />
       <workItem from="1627825145742" duration="20721000" />
       <workItem from="1627921827942" duration="943000" />
-      <workItem from="1627924739350" duration="4898000" />
+      <workItem from="1627924739350" duration="5676000" />
+      <workItem from="1628160218049" duration="2766000" />
+      <workItem from="1628259919107" duration="3869000" />
+      <workItem from="1628357950949" duration="9285000" />
+      <workItem from="1628411313372" duration="598000" />
+      <workItem from="1628430879560" duration="16632000" />
     </task>
     <task id="LOCAL-00001" summary="11/06/2021 19:24 Nick">
       <created>1623764860271</created>
@@ -263,7 +272,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627934365850</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Merge remote-tracking branch 'origin/main' into main&#10;&#10;# Conflicts:&#10;#&#9;Styles/main.css&#10;#&#9;index.php&#10;#&#9;siteItems/header.php">
+      <created>1627934422074</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1627934422074</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
