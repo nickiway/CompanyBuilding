@@ -43,7 +43,7 @@ nav>.extra-info{
 }
 .main-menu{
     background-color: #fff;
-    padding: 10px 150px 15px 150px;
+    padding: 10px 150px 0px 150px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -67,9 +67,10 @@ nav>.extra-info{
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.networks>div:nth-child(1){
     margin-right: 10px;
+}
+.networks>div:nth-child(3){
+    margin-right: 0px;
 }
 .networks>div>i{
     color: #fff;

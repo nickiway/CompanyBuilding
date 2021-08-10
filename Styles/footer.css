@@ -60,9 +60,10 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.socials>div:nth-child(1){
     margin-right: 10px;
+}
+.socials>div:nth-child(3){
+    margin-right: 0;
 }
 .socials>div>i{
     color: #898082;

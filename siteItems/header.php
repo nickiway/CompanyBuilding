@@ -23,6 +23,7 @@
             <div class="networks">
                 <div><i class="fab fa-telegram-plane fa-MyX1"></i></div>
                 <div><i class="fab fa-viber fa-MyX1"></i></div>
+                <div><i class="fab fa-google fa-MyX1"></i></div>
             </div>
         </div>
         <div class="main-menu">
