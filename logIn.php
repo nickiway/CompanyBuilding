@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <?php
+    require_once ("config\connect.php");
     require_once ("functions\logInFunction.php");
 ?>
 <html lang="en">

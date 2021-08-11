@@ -21,7 +21,8 @@ function checkMail($data, $connect){
 
 // Checkign if some of parametrs are incorect or repeateble
 if($_POST != null && $data['Password'] == $data['PasswordRepeat'] >= 6 && preg_match($pattern, $data['Email'])){
-    if (checkMail($data, $connect) != true ) {
+    print_r("Ok");
+    if (checkMail($data, $connect) == null ) {
         $passwordHash =  password_hash($data['Password'], PASSWORD_DEFAULT);
         mysqli_query($connect, "INSERT INTO `users`(Name,Email,Password) VALUES ('$data[Name]','$data[Email]','$passwordHash')");
     } else{

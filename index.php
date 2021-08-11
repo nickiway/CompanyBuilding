@@ -33,35 +33,35 @@ require_once(ROOT.'\config\connect.php');
     ?>
     <? require_once(ROOT.'\siteItems\header.php'); ?> 
     <!-- Body -->
-    <div class="toCenter">
-        <div id = "cart-container" class="cards__details toCenter">
-            <div id = "cart" class="cards__field cart__field">
-                <script> 
-                 uploadCart();
-                </script>
+        <div class="display-flex">
+            <div id = "cart-container" class="cards__details toCenter">
+                <div id = "cart" class="cards__field cart__field">
+                    <script> 
+                    uploadCart();
+                    </script>
+                </div>
+            </div>
+            <div class="main-cards margin-auto">
+                <div class="main__filter" >
+                    Filter
+                    <form method="get" >
+                        <select onchange="if (this.value) window.location.href = this.value">
+                            <optixon style = "display:none;" value="current"><?=$sortLable;?></optixon>
+                            <optgroup label = "По названию"></optgroup>
+                            <option value="index.php?sort=Name&Search=<?= $getQuerySerach?>">Сортировать по имени (А-Я)</option>
+                            <option value="index.php?sort=Name-desc&Search=<?= $getQuerySerach?>">Сортировать по имени (Я-А)</option>
+                            <optgroup label = "По цене"></optgroup>
+                            <option value="index.php?sort=Cost&Search=<?= $getQuerySerach?>">Сортировать по цене (по возвростанию)</option>
+                            <option value="index.php?sort=Cost-desc&Search=<?= $getQuerySerach?>">Сортировать по цене (по убыванию)</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="main__items">
+                    <? require_once(ROOT.'\functions\getGoods.php');?>
+                    <p id="output"></p>
+                </div>
             </div>
         </div>
-        <div class="main-cards">
-            <div class="main__filter" >
-                Filter
-                <form method="get" >
-                    <select onchange="if (this.value) window.location.href = this.value">
-                        <optixon style = "display:none;" value="current"><?=$sortLable;?></optixon>
-                        <optgroup label = "По названию"></optgroup>
-                        <option value="index.php?sort=Name&Search=<?= $getQuerySerach?>">Сортировать по имени (А-Я)</option>
-                        <option value="index.php?sort=Name-desc&Search=<?= $getQuerySerach?>">Сортировать по имени (Я-А)</option>
-                        <optgroup label = "По цене"></optgroup>
-                        <option value="index.php?sort=Cost&Search=<?= $getQuerySerach?>">Сортировать по цене (по возвростанию)</option>
-                        <option value="index.php?sort=Cost-desc&Search=<?= $getQuerySerach?>">Сортировать по цене (по убыванию)</option>
-                    </select>
-                </form>
-            </div>
-            <div class="main__items toCenter">
-                <? require_once(ROOT.'\functions\getGoods.php');?>
-                <p id="output"></p>
-            </div>
-        </div>
-    </div>
     <!-- Footer -->
     <? require_once(ROOT.'\siteItems\footer.php'); ?>
 </body>

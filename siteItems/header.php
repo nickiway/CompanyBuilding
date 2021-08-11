@@ -37,10 +37,11 @@
                 </ul>
                 <div class="magnifier">
                     <form method = get class = "display-flex">
-                        <input type="text" class="search" name = "Search" placeholder="Поиск..." >
-                        <div>
+                        <input type="text" class="search" autocomplete = "off" name = "Search" placeholder="Поиск..." >
+                        <input hidden type="submit" id = "search-button">
+                        <label  for = "search-button">
                             <i class="fas fa-search fa-MyX1"></i>
-                        </div>
+                        </label>
                     </form>
                 </div>
                 <div class="login">

@@ -109,7 +109,7 @@ nav>.extra-info{
     justify-content: center;
     padding: 0 0 0 7px;
 }
-.magnifier>form>div{
+.magnifier>form>label{
     height: 40px;
     width: 40px;
     display: flex;
@@ -117,15 +117,15 @@ nav>.extra-info{
     justify-content: center;
     transition: 0.2s;
 }
-.magnifier>form>div:hover{
+.magnifier>form>label:hover{
     background-color: #42413D;
     cursor: pointer;
 }
-.magnifier>form>div>i{
+.magnifier>form>label>i{
     color: #42413D;
     transition: 0.2s;
 }
-.magnifier>form>div:hover i{
+.magnifier>form>label:hover i{
     color: #FFCE2B;
 }
 .magnifier>form>div:active{
