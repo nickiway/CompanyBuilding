@@ -46,7 +46,7 @@ require_once(ROOT.'\config\connect.php');
                 Filter
                 <form method="get" >
                     <select onchange="if (this.value) window.location.href = this.value">
-                        <option style = "display:none;" value="current"><?=$sortLable;?></option>
+                        <optixon style = "display:none;" value="current"><?=$sortLable;?></optixon>
                         <optgroup label = "По названию"></optgroup>
                         <option value="index.php?sort=Name&Search=<?= $getQuerySerach?>">Сортировать по имени (А-Я)</option>
                         <option value="index.php?sort=Name-desc&Search=<?= $getQuerySerach?>">Сортировать по имени (Я-А)</option>
