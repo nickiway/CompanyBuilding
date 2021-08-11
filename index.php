@@ -56,7 +56,7 @@ require_once(ROOT.'\config\connect.php');
                         </select>
                     </form>
                 </div>
-                <div class="main__items">
+                <div class="main__items toCenter">
                     <? require_once(ROOT.'\functions\getGoods.php');?>
                     <p id="output"></p>
                 </div>
