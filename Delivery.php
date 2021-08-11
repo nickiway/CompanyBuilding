@@ -18,7 +18,7 @@ require_once(ROOT.'\config\connect.php');
     <link rel="stylesheet" href="Styles/footer.css">
     <link rel="stylesheet" href="Styles/header.css">
     <link rel="stylesheet" href="Styles/preloader.css">
-    <link rel="stylesheet" href="Styles/contacts.css">
+    <link rel="stylesheet" href="Styles/delivery.css">
     <link rel="stylesheet" href="Styles/main.css">
     <title>Добро пожаловать!</title>
 </head>
@@ -27,35 +27,33 @@ require_once(ROOT.'\config\connect.php');
     <!-- Header -->
     <? require_once(ROOT.'\siteItems\header.php'); ?>
     <!-- Body -->
-    <div class="box_contacts">
+    <div class="box_delivery">
         <div>
-            <h1>Свяжитесь с нами</h1>
-            <p>Приходите к нам или свяжитесь с нами в удобный вам способ</p>
-            <h3>Адресс</h3>
-            Днепропетровская область, г. Днепр, Ул. Горяная, 25
-            <h3>Рабочие дни</h3>
+            <h1>Доставка и оплата</h1>
+            <h3>Самовывоз:</h3>
+            Вы можете сами забрать заказанный Вами товар с магазина.
+            <h3>Доставка от нас</h3>
             <p>
-                Понедельник-Пятница: 08.30 - 18.00<br>
-                Суббота-Воскресенье: 09.00 - 17.00
+                Производиться нашим водителем на газеле.
             </p>
-            <h3>Контакты</h3>
+            <h3>Оплата производиться: </h3>
             <p>
-                +38 (050) 205 4564<br>
-                tchaban.aleksandr4002@gmail.com
+                Оплата в магазине с продавцом.<br>
+                Денежный перевод на карту банка: Приват банка.
             </p>
-            <div class="socials">
-                <div><i class="fab fa-telegram-plane fa-MyX1"></i></div>
-                <div><i class="fab fa-viber fa-MyX1"></i></div>
-                <div><i class="fab fa-google fa-MyX1"></i></div>
-            </div>
+            <h3>Примечание:</h3>
+            <p>
+                Минимальный заказ для отправки курьерскими службами (200грн.)<br>
+                Отрезной товар (ПРОВОД) отпускаеться только при полной предоплате.<br>
+                Товары дороже 2000грн. отправляются курьерскими службами при 10% предоплате.
+            </p>
         </div>
-        <div  class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1323.6729341030089!2d35.0555076349812!3d48.43070132179847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbfcc9cd38add9%3A0xec74071e4dd6c554!2sHoryana%20St%2C%2025%2C%20Dnipropetrovs&#39;k%2C%20Dnipropetrovs&#39;ka%20oblast%2C%2049000!5e0!3m2!1sen!2sua!4v1624214830990!5m2!1sen!2sua" loading="eager"></iframe>
+        <div>
+            <img src="images/Gazel.jpg" alt="" width="700">
         </div>
     </div>
     <!-- Footer -->
     <? require_once(ROOT.'\siteItems\footer.php'); ?>
-
 </body>
 <script src="JavaScript/preloader.js"></script>
 <script src="JavaScript/mainPage.js"></script>
