@@ -19,6 +19,7 @@ require_once(ROOT.'\config\connect.php');
     <link rel="stylesheet" href="Styles/preloader.css">
     <link rel="stylesheet" href="Styles/aboutUs.css">
     <link rel="stylesheet" href="Styles/main.css">
+    <link rel="shortcut icon" href="icons/favicon_created_by_logaster.ico" style="border-radius: 100%" type="image/x-icon">
     <title>Добро пожаловать!</title>
 </head>
 <body>

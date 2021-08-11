@@ -1,0 +1,45 @@
+.box_contacts{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 200px 50px 200px;
+    column-gap: 100px;
+}
+.map{
+    width: 50%;
+    height: 500px;
+    border: 0px;
+}
+.map>iframe{
+    margin: 0;
+    width: 100%;
+    border: 0px;
+    height: 100%;
+}
+h3{
+    margin: 25px 0 8px 0;
+}
+p{
+    margin: 10px 0 20px 0;
+}
+.socials{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.socials>div{
+    width: 40px;
+    height: 40px;
+    border: 2px solid #898082;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+.socials>div:nth-child(3){
+    margin-right: 0;
+}
+.socials>div>i{
+    color: #898082;
+}

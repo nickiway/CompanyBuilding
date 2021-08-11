@@ -33,7 +33,7 @@
                     <li><a href="../index.php">Каталог</a></li>
                     <li><a href="../aboutUs.php">О компании</a></li>
                     <li><a href="">Доставка и оплата</a></li>
-                    <li><a href="">Контакты</a></li>
+                    <li><a href="../Contacts.php">Контакты</a></li>
                 </ul>
                 <div class="magnifier">
                     <form method = get class = "display-flex">
