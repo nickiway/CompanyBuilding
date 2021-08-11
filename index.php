@@ -33,7 +33,7 @@ require_once(ROOT.'\config\connect.php');
     ?>
     <? require_once(ROOT.'\siteItems\header.php'); ?> 
     <!-- Body -->
-    <div class="toCenter">
+    <div class="toCenter justify-space_between">
         <div id = "cart-container" class="cards__details toCenter">
             <div id = "cart" class="cards__field cart__field">
                 <script> 

@@ -9,7 +9,7 @@
     </div>
     <img src="../icons/Корзина.png" height="31" alt="" onclick ="openCart();">
     <span id = "cartResult">0</span>
-    <button onclick = "clearCart()">Clear Cart</button>  -->
+    <button onclick = "clearCart()">Clear Cart</button> -->
     <nav>
         <div class="extra-info">
             <div class="contacts">
