@@ -9,7 +9,7 @@
     </div>
     <img src="../icons/Корзина.png" height="31" alt="" onclick ="openCart();">
     <span id = "cartResult">0</span>
-    <button onclick = "clearCart()">Clear Cart</button>  -->
+    <button onclick = "clearCart()">Clear Cart</button> -->
     <nav>
         <div class="extra-info">
             <div class="contacts">
@@ -32,7 +32,7 @@
                 <ul class="menu">
                     <li><a href="../index.php">Каталог</a></li>
                     <li><a href="../aboutUs.php">О компании</a></li>
-                    <li><a href="">Доставка и оплата</a></li>
+                    <li><a href="../Delivery.php">Доставка и оплата</a></li>
                     <li><a href="../Contacts.php">Контакты</a></li>
                 </ul>
                 <div class="magnifier">

@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 50px 200px 50px 200px;
+    padding: 20px 200px 50px 200px;
     column-gap: 100px;
 }
 .map{
@@ -16,6 +16,10 @@
     width: 100%;
     border: 0px;
     height: 100%;
+}
+h1{
+    border-bottom: 2px solid #FFCE2B;
+    margin-bottom: 15px;
 }
 h3{
     margin: 25px 0 8px 0;
