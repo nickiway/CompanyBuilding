@@ -3,17 +3,30 @@ footer{
     margin: 0;
     width: 100%;
     height: auto;
-    padding: 30px 40px 30px 40px;
-    border-top: 2pt solid #000;
+    padding:40px
+            0
+            calc(5px + (20 - 5) * ((100vw - 5px) / (1519 - 320)))
+            0;
+    border-top: 2px solid #000;
 }
 .cont{
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
     align-items: self-start;
-    padding: 10px 100px 0 75px;
+    flex-wrap: wrap;
+    padding-left: calc(10px + (80 - 10) * ((100vw - 10px) / (1519 - 320)));
+    column-gap: calc(10px + (100 - 10) * ((100vw - 10px) / (1519 - 320)));
+    row-gap: calc(20px + (30 - 20) * ((100vw - 20px) / (1519 - 320)));
 }
 .cont>span{
     color: black;
+}
+.cont>.image>a>img{
+    width: calc(210px + (300 - 210) * ((100vw - 210px) / (1519 - 320)));
+    margin: calc(10px + (40 - 10) * ((100vw - 10px) / (1519 - 320)))
+            auto
+            calc(10px + (40 - 10) * ((100vw - 10px) / (1519 - 320)))
+            auto;
 }
 .list_footer{
     list-style: none;
@@ -21,12 +34,14 @@ footer{
     justify-content: left;
 }
 .list_footer>li{
-    margin-bottom: 20px;
+    font-size: calc(16px + (18 - 14) * ((100vw - 14px) / (1519 - 320)));
+    margin-bottom: calc(14px + (20 - 14) * ((100vw - 14px) / (1519 - 320)));
     color: #898082;
     transition: 0.2s;
 }
 .list_footer>li:nth-of-type(1):hover, .list_footer>li:nth-of-type(1){
-    font-size: 20px;
+    max-width: calc(250px + (400 - 250) * ((100vw - 250px) / (1519 - 320)));
+    font-size: calc(20px + (26 - 20) * ((100vw - 20px) / (1519 - 320)));
     border-bottom: 2px solid #FFCE2B;
     height: 35px;
     color: #fff;
@@ -52,19 +67,17 @@ footer{
     display: flex;
     justify-content: left;
     align-items: center;
+    column-gap: 10px;
 }
 .socials>div{
-    width: 40px;
-    height: 40px;
+    width: calc(30px + (40 - 30) * ((100vw - 30px) / (1519 - 320)));
+    height: calc(30px + (40 - 30) * ((100vw - 30px) / (1519 - 320)));
     border: 2px solid #898082;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 10px;
-}
-.socials>div:nth-child(3){
-    margin-right: 0;
 }
 .socials>div>i{
+    font-size: calc(16px + (20 - 16) * ((100vw - 16px) / (1519 - 320)));
     color: #898082;
 }

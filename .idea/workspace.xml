@@ -3,8 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="4e4f21a2-f966-41e4-9e83-718a6592dc9d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Styles/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/Styles/footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Styles/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/Styles/header.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Styles/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/Styles/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/connect.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/connect.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/Logo2.png" beforeDir="false" afterPath="$PROJECT_DIR$/icons/Logo2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/Logo_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/icons/Logo_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/siteItems/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/siteItems/footer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/siteItems/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/siteItems/header.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,24 +62,9 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Миша/Фриланс/Собаки" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -146,7 +136,13 @@
       <workItem from="1628430879560" duration="17139000" />
       <workItem from="1628519916468" duration="12020000" />
       <workItem from="1628586379128" duration="7733000" />
-      <workItem from="1628687843270" duration="19710000" />
+      <workItem from="1628687843270" duration="19729000" />
+      <workItem from="1628787171860" duration="3762000" />
+      <workItem from="1628874347408" duration="16000" />
+      <workItem from="1628880038612" duration="1432000" />
+      <workItem from="1629474600128" duration="2110000" />
+      <workItem from="1629540361278" duration="452000" />
+      <workItem from="1629626454613" duration="14704000" />
     </task>
     <task id="LOCAL-00001" summary="11/06/2021 19:24 Nick">
       <created>1623764860271</created>
@@ -337,7 +333,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628716435591</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Merge remote-tracking branch 'origin/main' into main&#10;&#10;# Conflicts:&#10;#&#9;Styles/main.css&#10;#&#9;index.php&#10;#&#9;siteItems/header.php">
+      <created>1628717570788</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1628717570788</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -21,14 +21,14 @@
                 </div>
             </div>
             <div class="networks">
-                <div><i class="fab fa-telegram-plane fa-MyX1"></i></div>
-                <div><i class="fab fa-viber fa-MyX1"></i></div>
-                <div><i class="fab fa-google fa-MyX1"></i></div>
+                <div><i class="fab fa-telegram-plane"></i></div>
+                <div><i class="fab fa-viber"></i></div>
+                <div><i class="fab fa-google"></i></div>
             </div>
         </div>
         <div class="main-menu">
-            <a href="../index.php"><img src="../icons/Logo_1.png" alt="" width="300px"></a>
-            <div class="toCenter">
+            <a href="../index.php"><img src="../icons/Logo_1.png" alt=""></a>
+            <div class="toCenter row_gap">
                 <ul class="menu">
                     <li><a href="../index.php">Каталог</a></li>
                     <li><a href="../aboutUs.php">О компании</a></li>
@@ -39,16 +39,16 @@
                     <form method = get class = "display-flex">
                         <input type="text" class="search" autocomplete = "off" name = "Search" placeholder="Поиск..." >
                         <input hidden type="submit" id = "search-button">
-                        <label  for = "search-button">
-                            <i class="fas fa-search fa-MyX1"></i>
+                        <label  for = "search-button" class="btnSearch">
+                            <i class="fas fa-search"></i>
                         </label>
                     </form>
-                </div>
-                <div class="login">
-                    <i class="fas fa-user-circle fa-2x"></i>
-                </div>
-                <div class="cart">
-                    <i class="fas fa-shopping-bag fa-2x"></i>
+                    <div class="login">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="cart">
+                        <i class="fas fa-shopping-bag"></i>
+                    </div>
                 </div>
             </div>
         </div>

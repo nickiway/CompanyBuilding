@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+body{
+    min-width: 320px;
+}
 a{
     text-decoration: none; 
     color:#000;
